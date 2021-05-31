@@ -46,15 +46,13 @@ int main(int argc, char** argv){
 			}
 		}
 	}
-	printf("\n%d elements, the longest increasing subsequence is:\n", n_elem);
 	{int i;
 		for(i = most_successors;;){
-			printf("\n%lld", list[i]);
+			printf("%lld\n", list[i]);
 			i = list_nexts[i];
 			if(i == 0) break; /*End of program.*/
 		}
 	}
-	puts("End of list!");
 	free(list);
 	free(list_nexts);
 	free(num_successors);
